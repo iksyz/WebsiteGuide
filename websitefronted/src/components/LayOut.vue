@@ -8,15 +8,18 @@
   }
 
   .layout-header-bar {
+    height: 60px;
     background: #fff;
     box-shadow: 0 2px 3px 2px rgba(0, 0, 0, .1);
   }
+
+
 
 </style>
 <template>
   <div :style="{border:'none'}" class="layout">
     <SiderMenu></SiderMenu>
-    <Layout :style="{marginLeft: '200px'}">
+    <Layout :style="{marginLeft: '240px'}">
       <Header class="layout-header-bar">
         <div>
           <Row type="flex" justify="end" align="middle">
@@ -55,7 +58,7 @@
                 return this.$store.state.username
             },
             isShow(){
-              if (this.$route.meta.title !== "websiteguide"){
+              if (this.$route.meta.title !== "述信科技"){
                 return true
               }
         }},

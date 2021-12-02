@@ -16,9 +16,9 @@ html, body {
   width: 100%;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  /*-webkit-font-smoothing: antialiased;*/
+  /*-moz-osx-font-smoothing: grayscale;*/
   color: #2c3e50;
   height: 100%;
   width: 100%;
@@ -34,4 +34,5 @@ html, body {
   font-weight: 700 !important;
   color: rgba(0,0,0,0.5) !important;
 }
+
 </style>

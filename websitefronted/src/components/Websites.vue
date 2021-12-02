@@ -1,22 +1,22 @@
 <template>
   <div :style="{margin: '16px 0 0 0',}">
-    <div style="display: flex;justify-content: center;align-items: center;">
-      <Input search size="large" style="width: 600px" placeholder="search..." @on-search='search'/>
-    </div>
+<!--    <div style="display: flex;justify-content: center;align-items: center;">-->
+<!--      <Input search size="large" style="width: 600px" placeholder="search..." @on-search='search'/>-->
+<!--    </div>-->
     <div v-for="item in $store.state.websiteList" :key="item.id">
       <Row>
         <Col>
           <div :id="anchorId(item.id)"
-               style="line-height: 60px; font-size: 17px;margin-left: 15px;">
+               style="line-height: 50px; font-size: 17px;margin-left: 15px;">
             <Icon type="ios-pricetags-outline"/>
             {{item.name}}
           </div>
         </Col>
       </Row>
-      <Row :gutter="32">
+      <Row :gutter="16">
         <Col span="6" style="padding: 12px;" v-for="(data,index) in item.websites" :key="index">
           <div style="cursor: pointer;" @click="redirect(data.path)">
-            <Card style="border-radius: 30px;">
+            <Card style="border-radius: 15px;">
               <div class="card-div">
                 <div style="width: 30%;display: flex;align-items: center">
                   <img :src="icon(data.id)" style="border-radius: 50%;width: 80%;height: 80%;">

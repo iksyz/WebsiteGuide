@@ -14,7 +14,8 @@ Vue.use(VueWechatTitle)
 
 Vue.config.productionTip = false
 Vue.use(VueAxios, axios)
-Vue.use(ViewUI)
+Vue.use(ViewUI, {
+})
 /* eslint-disable no-new */
 
 //根据环境匹配api地址
@@ -35,6 +36,7 @@ axios.interceptors.request.use(config => {
 }, error => {
   return Promise.reject(error)
 })
+
 
 new Vue({
   el: '#app',
